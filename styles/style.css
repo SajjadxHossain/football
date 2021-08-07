@@ -1,0 +1,151 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+
+.container{
+    margin-bottom: 50px;
+}
+
+/*----------------
+ Banner Style 
+ ---------------- */
+
+.tournament{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: darkblue;
+    margin-bottom: 50px;
+}
+.tournament:hover{
+    background-color: darkgreen;
+    transition: 3s;
+}
+.tournament-title h1{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+.banner-image img{
+    Width: 556.01px;
+    Height: 438px;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 12px;
+}
+.button:hover{
+    background-color: darkcyan;
+    transition: 1s;
+}
+
+/*----------------
+ player section 
+ ---------------- */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+}
+.player{
+    height: 474px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px -7px;
+}
+.player-title{
+    font-size: 28px;
+}
+.player-description{
+    font-size: 16px;
+}
+.player img{
+    width: 300px;
+    height: 
+    256px;
+}
+
+/*---------------
+ Bottom Section
+--------------- */
+.follow-us-info{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+}
+
+.follow-icon{
+    Width: 32px;
+    Height:32px;
+}
+.copyright{
+    font-size: 18px;
+   
+}
+
+/*---------------
+ Contact Section
+--------------- */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.123);
+    margin: 0 15% 0 15%;
+    padding: 0 5% 1% 5%;
+    border-radius: 10px;
+
+}
+.contact > h4 > a{
+    text-decoration: none;
+}
+
+ /*----------------------
+ Media Queries
+ -----------------------*/
+ /* Mobile devices */
+ @media only screen and (max-width:688px){
+     .container{
+         width: 100%;
+     }
+     .players{
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .tournament{
+         display: flex;
+         flex-direction: column;
+     }
+     .follow-us-info img{
+         height: 400px;
+         width: 400px;
+     }
+ }
+/* For Tablet */
+.@media only screen and (min-width:689px) and (max-width:991px){
+    .container{
+        width: 100%;
+    }
+    .players{
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .tournament{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+}
